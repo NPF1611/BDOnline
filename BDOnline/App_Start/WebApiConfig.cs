@@ -9,7 +9,6 @@ namespace BDOnline
     {
         public static void Register(HttpConfiguration config)
         {
-
             // Web API configuration and services
 
             // Web API routes
@@ -34,6 +33,10 @@ namespace BDOnline
             // Opcional: Converter os nomes de propriedades PascalCase (a la .net)
             // para camelCase (a la Java/JavaScript).
             // Descomentar as duas seguintes linhas mudará o JSON devolvido.
+
+
+
+
 
 
 
