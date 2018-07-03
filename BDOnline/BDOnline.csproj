@@ -163,7 +163,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\GetClasses_FirstView.cs" />
+    <Compile Include="Api\GetClasses.cs" />
+    <Compile Include="Api\GetClass.cs" />
+    <Compile Include="Api\GetResources.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
