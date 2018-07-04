@@ -1,0 +1,53 @@
+﻿body {
+    background-color: #000000;
+}
+
+/*BDO*/
+#BlackDesert {
+    margin-left: 5%;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 80px;
+    cursor: pointer;
+    color: ButtonFace;
+    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
+}
+
+/*symbols */
+#Resources {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+
+.idResourceName {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: ButtonFace;
+    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
+    color: #dccece;
+}
+
+.div-Classes {
+    border: 2px solid #808080;
+    width: 12.5%;
+}
+
+.ClassImgs {
+    height: 100px
+}
+
+.ClassNames {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5px;
+    cursor: pointer;
+    color: ButtonFace;
+    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
+}

@@ -162,8 +162,5 @@ namespace BDOnline.Controllers
             return Ok(Class);
         }
 
-
-
-
     }
 }
