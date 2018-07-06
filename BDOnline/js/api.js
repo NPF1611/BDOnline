@@ -14,7 +14,7 @@ function getResources() {
 //Get the Resource with the id ResourceID  
 function getResources_RID(ResourceID) {
 
-
+    x
     return fetch("/api/Resources/" + ResourceID , { headers: { Accept: 'application/json' } })
         .then(function (resposta) {
             if (resposta.status === 200) {
