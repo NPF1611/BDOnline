@@ -1,5 +1,6 @@
 ﻿body {
     background-color: #000000;
+    background-image: url(https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
 
 /*BDO*/
@@ -29,7 +30,6 @@
     padding-left: 30px;
     padding-right: 30px;
     cursor: pointer;
-  
 }
 
 .idResourceName {
@@ -41,17 +41,17 @@
 
 /*Classes-show-intro*/
 #Classes {
-    margin-left:5%;
-    margin-right:5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     padding: 5px;
 }
 
 
 .div-Classes {
     background-color: #000000;
-    border: 1px solid #353535;
+    border: 1px dotted #353535;
     padding: 20px;
     height: 150px;
     width: 150px;
@@ -74,10 +74,10 @@
 }
 
 #selectedClasses {
-     margin-left:5%;
-    margin-right:5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     padding: 5px;
 }
 
@@ -87,27 +87,117 @@
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     padding: 5px;
-
 }
+
+
+/*div direita*/
+.divDireita_view {
+}
+
+.title_view {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+}
+
+.img_D {
+    width: 250px;
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1Px solid #660000;
+    text-align: center;
+}
+
+.weapon {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+}
+
+.weaponS {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+}
+
+.weaponA {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+}
+
+.style {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+}
+
+.ab {
+    margin: 0%;
+    color: aliceblue;
+    background-color: #222222;
+    border: 1px solid #660000;
+    text-align: center;
+    width: 250px;
+}
+
+.TiTTLE {
+    margin: 0%;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
+    color: aliceblue;
+    background-color: #444444;
+    border: 1px solid #660000;
+    text-align: center;
+    width: 250px;
+}
+
 /*div esquerda*/
 .divEsquerda_view {
-
-
-}
-/*div direita*/
-divDireita_view {
-
-
+    border: 1px solid #600000;
+    background-color: black;
 }
 
-/*div esquerda*/
+.title_view_f {
+}
 
 .ClassImgs_view {
-    height: 40px;
+    height: 100px;
+    margin-left: 0%;
 }
 
-.className {
+.text {
+    color: azure;
+}
 
+.Cont {
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h2 {
+    color: cornsilk;
+    border: 1px solid #600000;
+    background-color: #444444;
+}
+
+}
+
+p {
+    margin: 0 10px;
+    color: antiquewhite;
 }
