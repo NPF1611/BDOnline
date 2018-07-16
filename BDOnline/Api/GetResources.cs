@@ -9,9 +9,6 @@ namespace BDOnline.Api
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-
-
 
         public virtual ICollection<Classes_List> Class_List { get; set; }
 

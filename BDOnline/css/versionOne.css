@@ -1,16 +1,21 @@
 ﻿body {
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #000000;
-    background-image: url(https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: url(https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)no-repeat center center fixed;
+    font-family: 'Marcellus',serif;
+    background-size: cover;
 }
 
 /*BDO*/
 #BlackDesert {
     margin-left: 5%;
     font-weight: bold;
+    color: #000;
     font-style: normal;
     font-size: 80px;
     cursor: pointer;
-    color: ButtonFace;
+    opacity: 0.3;
     text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
 }
 
@@ -28,9 +33,16 @@
 .div-resourcesn1 {
     border: 1px solid #353535;
     padding-left: 30px;
+    background-color: rgb(22, 19, 19);
     padding-right: 30px;
     cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
 }
+
+    .div-resourcesn1:hover {
+        opacity: 0.9;
+    }
 
 .idResourceName {
     font-weight: bold;
@@ -42,6 +54,7 @@
 /*Classes-show-intro*/
 #Classes {
     margin-left: 5%;
+    margin-top: 10%;
     margin-right: 5%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -50,16 +63,23 @@
 
 
 .div-Classes {
-    background-color: #000000;
-    border: 1px dotted #353535;
+    background-color: rgb(29, 28, 28);
+    opacity: 0.70;
+    position: center;
     padding: 20px;
     height: 150px;
+    border-radius: 3px;
     width: 150px;
     margin-bottom: 30px;
     cursor: pointer;
     font-size: 30px;
     text-align: center;
 }
+
+    .div-Classes:hover {
+        opacity: 0.9;
+    }
+
 
 .ClassImgs {
     height: 50px;
@@ -69,12 +89,14 @@
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
-    color: ButtonFace;
-    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
+    color: #d1cdcd;
+    opacity: 0.9;
+    /*text-shadow: 0 0 5px rgba(164, 90, 90, 0.83);*/
 }
 
 #selectedClasses {
     margin-left: 5%;
+    margin-top: 10%;
     margin-right: 5%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -94,84 +116,34 @@
 
 /*div direita*/
 .divDireita_view {
-}
-
-.title_view {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
+    height: 70%;
 }
 
 .img_D {
-    width: 250px;
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1Px solid #660000;
-    text-align: center;
-}
-
-.weapon {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
-}
-
-.weaponS {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
-}
-
-.weaponA {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
-}
-
-.style {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
-}
-
-.ab {
-    margin: 0%;
-    color: aliceblue;
-    background-color: #222222;
-    border: 1px solid #660000;
-    text-align: center;
-    width: 250px;
-}
-
-.TiTTLE {
-    margin: 0%;
-    text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(251, 213, 213, 0.5);
-    color: aliceblue;
-    background-color: #444444;
-    border: 1px solid #660000;
-    text-align: center;
-    width: 250px;
+    object-fit: fill;
 }
 
 /*div esquerda*/
 .divEsquerda_view {
-    border: 1px solid #600000;
-    background-color: black;
+    background-color: rgb(29, 28, 28);
+    opacity: 0.70;
+    position: relative;
+    border-radius: 5px;
+}
+
+.classImg_Symbol {
+    height: 100px;
+    filter: grayscale(100%);
+    margin: 0%;
+    padding: 0%;
 }
 
 .title_view_f {
+    margin-top: 5%;
+    margin-left: 3px;
+    padding: 0%;
+    font-size: 400%;
+    opacity: 0.7;
 }
 
 .ClassImgs_view {
@@ -180,24 +152,303 @@
 }
 
 .text {
-    color: azure;
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .Cont {
+    margin-top: 1%;
+    margin-left: 2%;
     width: 400px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
 }
 
 h2 {
-    color: cornsilk;
-    border: 1px solid #600000;
-    background-color: #444444;
-}
-
+    border-bottom: 1px solid #888888;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-right: 2%;
+    color: #808080;
+    text-transform: uppercase;
+    border-top: 1px solid #888888;
 }
 
 p {
-    margin: 0 10px;
-    color: antiquewhite;
+    text-align: justify;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.classe1 {
+    width: 550px;
+}
+
+.classe2 {
+    width: 450px;
+}
+
+.classe9 {
+    width: 700px;
+}
+
+.classe10 {
+    width: 900px;
+}
+
+.classe14 {
+    width: 700px;
+}
+
+
+.classe16 {
+    width: 500px;
+}
+
+.classWarriorDE {
+    height: 400px;
+    width: 500px;
+}
+
+.classOtherDE {
+    height: 400px;
+    width: 700px;
+}
+
+/*MEDIA QUERIES*/
+/*LAPTOP SCREEN*/
+@media screen and (max-width: 1407px) and (min-width: 1099px) {
+    #Resources {
+        margin-right: 2.70%;
+        margin-bottom: 30px;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #selectedClasses {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 5px;
+    }
+
+    #Classes {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 5px;
+    }
+
+    #Details {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    .img_D {
+        object-fit: fill;
+    }
+}
+
+/*Anoter one*/
+@media screen and (max-width: 1098px) and (min-width:926px) {
+    body{
+        overflow-y:auto;
+
+    }
+
+    #Resources {
+        margin-right: 2.70%;
+        margin-bottom: 30px;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #selectedClasses {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 5px;
+    }
+
+    #Classes {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+        padding: 5px;
+    }
+
+    #Details {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    .img_D {
+        object-fit: fill;
+    }
+}
+
+/*Anoter one*/
+@media screen and (max-width: 927px) and (min-width:532px) {
+    body {
+        overflow-y: auto;
+    }
+    #BlackDesert{
+        font-size:50px;
+
+    }
+    #Resources {
+        margin-right: 2.70%;
+        margin-bottom: 30px;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #selectedClasses {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5px;
+    }
+
+    #Classes {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5px;
+    }
+
+    #Details {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    .img_D {
+        object-fit: fill;
+    }
+}
+
+/*Anoter one*/
+@media screen and (max-width: 532px) and (min-width:375px) {
+    body {
+        overflow-y: auto;
+    }
+    #BlackDesert {
+        font-size: 40px;
+    }
+    #Resources {
+        margin-right: 2.70%;
+        margin-bottom: 30px;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #selectedClasses {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    #Classes {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    #Details {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: table-row;
+        padding: 5px;
+    }
+
+    .img_D {
+        object-fit: fill;
+    }
+}
+
+
+/*Anoter one*/
+@media screen and (max-width: 375px) and (min-width:0) {
+    body {
+        overflow-y: auto;
+    }
+    #Resources {
+        margin-right: 2.70%;
+        margin-bottom: 30px;
+        padding-right: 5%;
+        display: initial;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #selectedClasses {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        margin-left: 27%;
+        grid-template-columns: auto;
+        padding: 5px;
+    }
+
+    #Classes {
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-right: 5%;
+        display: grid;
+        margin-left: 27%;
+        grid-template-columns: auto;
+        padding: 5px;
+    }
+
+    #Details {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    .img_D {
+        object-fit: fill;
+    }
 }

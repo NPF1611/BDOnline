@@ -152,7 +152,7 @@ function Back() {
     ResourcesSelected.classList.remove("hide");
     Classelected.classList.add("hide");
     DetailsDiv.classList.add("hide");
-   
+
 }
 
 
@@ -205,7 +205,7 @@ function showSelectedClasses(classes) {
             listDetails(idC);
 
         }
-        
+
 
         divCont.appendChild(divContainer);
     }
@@ -224,26 +224,34 @@ function listDetails(id) {
 }
 
 function showClassDetails(classDetails) {
+
     classe = classDetails;
 
     var divCont = document.getElementById("Details");
     var divE = document.createElement("div");
     divE.setAttribute("class", "divEsquerda_view");
-    //name div 
+    if (classe.ID == 10) {
+        divE.classList.remove("classOtherDE");
+        divE.classList.add("classWarriorDE");
+    } else {
+        divE.classList.add("classOtherDE");
+        divE.classList.remove("classWarriorDE");
+    }
+    //name div
     var divContentor = document.createElement("div");
-    divContentor.setAttribute("class","Cont");
+    divContentor.setAttribute("class", "Cont");
     var title = document.createElement("h1");
     title.setAttribute("class", "title_view_f")
     title.classList.add("text")
-
     title.textContent = classe.Name;
     var symbol = document.createElement('img');
-    symbol.setAttribute("class","ClassImgs_view")
+    symbol.setAttribute("class", "classImg_Symbol");
     symbol.src = classe.Ch_Symbol;
-
     divContentor.appendChild(symbol);
     divContentor.appendChild(title);
     divE.appendChild(divContentor);
+
+
     //description div
     var descDiv = document.createElement("div");
     var descTitle = document.createElement("h2");
@@ -253,137 +261,21 @@ function showClassDetails(classDetails) {
     descDiv.appendChild(descTitle);
     descDiv.appendChild(desc);
     divE.appendChild(descDiv);
-    //History div
-    var divHist = document.createElement("div");
-    var histTitle = document.createElement("h2");
-    histTitle.textContent = "History";
-    var hist = document.createElement("p");
-    hist.textContent = classe.History;
-    divHist.appendChild(histTitle);
-    divHist.appendChild(hist);
-    divE.appendChild(divHist);
-    //Play Style div
-    var divPlay = document.createElement("div");
-    var playTitle = document.createElement("h2");
-    playTitle.textContent = "Play Style";
-    var play = document.createElement("p");
-    play.textContent = classe.Play_Style;
-    divPlay.appendChild(playTitle);
-    divPlay.appendChild(play);
-
-    divE.appendChild(divPlay);
+    //append all to the left div
+    divE.appendChild(descDiv);
     //div da direita
     var divD = document.createElement("div");
     divD.setAttribute("class", "divDireita_view");
 
-    var t = document.createElement("p");
-    t.setAttribute("class", "TiTTLE");
-    t.textContent = "NAME:";
-
-    var divT = document.createElement("div");
-    var divT2 = document.createElement("div");
-    var divT3 = document.createElement("div");
-    var divT4 = document.createElement("div");
-    var divT5 = document.createElement("div");
-    var divT6 = document.createElement("div");
-    var divT7 = document.createElement("div");
-
-    divT.appendChild(t);
-
-    var t2 = document.createElement("p");
-    t2.setAttribute("class", "TiTTLE");
-    t2.textContent = "IMAGE:";
-
-    divT2.appendChild(t2);
-   
-    var t3 = document.createElement("p");
-    t3.setAttribute("class", "TiTTLE");
-    t3.textContent = "STYLE:";
-    divT3.appendChild(t3);
-
-    var t4 = document.createElement("p");
-    t4.setAttribute("class", "TiTTLE");
-    t4.textContent = "WEAPON:";
-    divT4.appendChild(t4);
-
-    var t5 = document.createElement("p");
-    t5.setAttribute("class", "TiTTLE");
-    t5.textContent = "SECONDARY WEAPON:";
-    divT5.appendChild(t5);
-
-    var t6 = document.createElement("p");
-    t6.setAttribute("class", "TiTTLE");
-    t6.textContent = "AWEAKING WEAPON:";
-    divT6.appendChild(t6);
-
-    var t7 = document.createElement("p");
-    t7.setAttribute("class", "TiTTLE");
-    t7.textContent = "STATUS GRAPH:";
-    divT7.appendChild(t7);
-
-    var divNameD = document.createElement("div");
-    var title_D = document.createElement("p");
-    title_D.setAttribute("class", "title_view");
-    title_D.textContent = classe.Name;
-    divNameD.appendChild(title_D);
-
     var divImg = document.createElement("div");
     var img_D = document.createElement("img");
     img_D.setAttribute("class", "img_D");
+    img_D.classList.add("classe" + classe.ID);
     img_D.src = classe.Ch_image_fullBody;
     divImg.appendChild(img_D);
 
-    var divStyle = document.createElement("div");
-    var style = document.createElement("p");
-    style.setAttribute("class", "style");
-    style.textContent = classe.Fight_style;
-    divStyle.appendChild(style);
-
-    var divWeapon = document.createElement("div");
-    var weapon = document.createElement("p");
-    weapon.setAttribute("class", "weapon");
-    weapon.textContent = classe.Weapon;
-    divWeapon.appendChild(weapon);
-
-    var divWeaponS = document.createElement("div");
-    var weaponS = document.createElement("p");
-    weaponS.setAttribute("class", "weaponS");
-    weaponS.textContent = classe.Secondary_weapon;
-    divWeaponS.appendChild(weaponS);
-
-    var divWeaponA = document.createElement("div");
-    var weaponA = document.createElement("p");
-    weaponA.setAttribute("class", "weaponA");
-    weaponA.textContent = classe.Aweking_weapon;
-    divWeaponA.appendChild(weaponA);
-
-    var divImg_AB = document.createElement("div");
-    var img_AB = document.createElement("img");
-    img_AB.setAttribute("class","ab")
-    img_AB.src = classe.Ab_graph;
-    divImg_AB.appendChild(img_AB);
-
-    divD.appendChild(divT);
-    divD.appendChild(divNameD);
-
     //divD.appendChild(divT2);
     divD.appendChild(divImg);
-
-    divD.appendChild(divT3);
-    divD.appendChild(divStyle);
-
-    divD.appendChild(divT4);
-    divD.appendChild(divWeapon); 
-
-    divD.appendChild(divT5);
-    divD.appendChild(divWeaponS);
-
-    divD.appendChild(divT6);
-    divD.appendChild(divWeaponA);
-
-    divD.appendChild(divT7);
-    divD.appendChild(divImg_AB);
-
 
     divCont.appendChild(divE);
     divCont.appendChild(divD);

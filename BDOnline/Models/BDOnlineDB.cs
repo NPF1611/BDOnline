@@ -12,7 +12,6 @@ namespace BDOnline.Models
         public BDOnlineDB() : base("BDOnlineDBConnectionString")
         {
         }
-        
         public virtual DbSet<Resource> Resources { get; set; }
         public virtual DbSet<Classes> Classess { get; set; }
 

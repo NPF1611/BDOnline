@@ -26,7 +26,6 @@ namespace BDOnline.Controllers
                 {
                     ID = r.ID,
                     Name = r.Name,
-                    Description = r.Description
 
                 })
                 .OrderBy(r => r.Name)
@@ -57,7 +56,6 @@ namespace BDOnline.Controllers
                 {
                     ID = r.ID,
                     Name = r.Name,
-                    Description = r.Description
 
                 })
                 .FirstOrDefault();
@@ -138,17 +136,10 @@ namespace BDOnline.Controllers
                 .Select(c => new GetClass
                 {
                     ID = c.ID,
-                    Ab_graph = c.Ab_graph,
-                    Aweking_weapon = c.Aweking_weapon,
                     Ch_image_fullBody = c.Ch_image_fullBody,
                     Ch_Symbol = c.Ch_Symbol,
                     Description = c.Description,
-                    Fight_style = c.Fight_style,
-                    History = c.History,
                     Name = c.Name,
-                    Play_Style = c.Play_Style,
-                    Secondary_weapon = c.Secondary_weapon,
-                    Weapon = c.Weapon,
                     resource_type = c.ResourceFK
 
 
